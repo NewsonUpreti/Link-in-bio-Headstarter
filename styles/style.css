@@ -16,6 +16,11 @@ header {
   margin: auto;
   display: inline-block;
   position: relative;
+  filter: blur(10px);
+  opacity: 0;
+  transition:
+    opacity 1.4s ease-in-out,
+    filter 1.4s ease-in-out;
 }
 
 header > h1 {
@@ -28,7 +33,6 @@ header > h1 {
   background: rgba(0, 0, 0, 0.4);
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.7);
-
   font-family: Comfortaa, "Courier New", Courier, monospace;
 }
 
@@ -54,6 +58,11 @@ header > h1 {
 main {
   text-align: center;
   /* position: relative; */
+  filter: blur(10px);
+  opacity: 0;
+  transition:
+    opacity 2s ease-in-out,
+    filter 2s ease-in-out;
 }
 main > ul {
   list-style: none;

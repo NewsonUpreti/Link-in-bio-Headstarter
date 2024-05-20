@@ -28,22 +28,31 @@
           quantity: 1.5,
           backgroundAlpha: 0,
         });
+        setTimeout(() => {
+          const main = document.querySelector("main");
+          const header = document.querySelector("header");
+          header.style.opacity = 1;
+          main.style.opacity = 1;
+          header.style.filter = "blur(0px)";
+          main.style.filter = "blur(0px)";
+        }, 1000);
       });
     </script>
   </head>
   <body>
     <div id="vanta"></div>
-    <header>
+    <header id="header">
       <div id="profile-image"><img src="img/prof.jpg" alt="" /></div>
       <h1>@newson</h1>
       <!-- <p>Live-reload</p> -->
     </header>
-    <main>
+    <main id="main">
       <ul id="linkHead">
         <li><a href="#">Main Profile</a></li>
         <li><a href="https://linkedin.com/in/newsonupreti">LinkedIn</a></li>
         <li><a href="https://x.com/newsonupreti">X</a></li>
         <li><a href="https://github.com/newsonupreti">GitHub</a></li>
+        <li><a href="https://www.youtube.com/@NewSon14">YouTube</a></li>
         <li><a href="https://www.youtube.com/@NewSon14">YouTube</a></li>
       </ul>
     </main>
